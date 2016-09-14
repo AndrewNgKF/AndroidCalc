@@ -13,9 +13,6 @@
         android:inputType="numberSigned|numberDecimal"
         android:ems="10"
         android:id="@+id/result"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
@@ -105,7 +102,7 @@
         android:id="@+id/button7"
         android:minWidth="48dip"
         app:layout_constraintTop_toBottomOf="@+id/newNumber"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintLeft_toLeftOf="@+id/newNumber" />
 
     <Button
@@ -197,19 +194,19 @@
         android:minWidth="48dip" />
 
     <TextView
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/operation"
-        app:layout_constraintRight_toLeftOf="@+id/newNumber"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="8dp"
         android:textSize="18sp"
         android:textStyle="normal|bold"
-        tools:layout_editor_absoluteY="67dp"
-        app:layout_constraintBaseline_toBaselineOf="@id/newNumber" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button7"
+        app:layout_constraintRight_toLeftOf="@+id/button7"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -217,13 +214,12 @@
         android:inputType="numberSigned"
         android:ems="10"
         android:id="@+id/newNumber"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/result"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/result" />
 
 </android.support.constraint.ConstraintLayout>
